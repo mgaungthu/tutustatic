@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Dashboard | Tu Tu Myanmar`s Fastest Wifi</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,,maximum-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+    // DOMContentLoaded  end
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="container-fluid padding-50px-lr">
+            <div class="row">
+                <div class="col-2">
+                    <a href="index.html">
+                    <img src="images/dashboard/tutu-fiber.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-2 ms-auto d-flex align-items-center justify-content-end">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Rohith Machineni
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <aside class="sidenav margin-80px-top">
+            <ul class="left-nav">
+                <li class="nav-item has-dropdown">
+                    <a href="#">Digital Home</a>
+                    <ul class="dropdown" style="display: none;">
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                            <a href="#" class="role">Admin</a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-billing-history.html">Billing History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-upgrade-plan.html">Upgrade Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-upgrade-pack.html">Upgrade Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Service Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Entertainment Pack</a>
+                </li>
+            </ul>
+            <ul class="left-nav bottom-menu">
+                <li class="nav-item active">
+                    <a href="user-dashboard-setting.html">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+      </aside>
+
+      <div class="wrapper padding-40px-lr">
+         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="padding-20px-tb border-bottom-green">
+                        <div class="row align-items-center">
+                            <div class="col-3 col-lg-1">
+                                <a href="user-dashboard-setting.html" class="back-btn margin-30px-left"><img src="images/back-arrow.png" width="28px"
+                                    alt=""></a>
+                            </div>
+                            <div class="col-9 col-lg-4">
+                                <h3 class="username text-white mb-0">Billing Address</h3>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-1-rem-top">
+                <div class="col-lg-7 offset-lg-3">
+                    
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="name">*Home No</label>
+                            <input type="text" name="name" class="box-control mt-3" id="name">
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="street">*Street</label>
+                            <input type="text" name="street" id="street" class="box-control mt-3" >
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="ward">*Ward</label>
+                            <input type="text" name="ward" id="ward" class="box-control mt-3" >
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="township">*Township</label>
+                            <input type="text" name="township" id="township" class="box-control mt-3" >
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="district">*District</label>
+                            <input type="text" name="district" id="district" class="box-control mt-3" >
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="city">*City</label>
+                            <input type="text" name="city" id="district" class="box-control mt-3" >
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex flex-column me-auto px-2 margin-1-rem-top">
+                            <label for="zip-code">*Zip Code</label>
+                            <input type="text" name="zip-code" id="zip-code" class="box-control mt-3" >
+                        </div> 
+                    </div>
+
+                    <div class="row margin-1-rem-top tandc-agreement">
+                
+                        <div class="col-12 d-flex align-items-center justify-content-start">    
+                            <input type="checkbox" name="agreement" value="1" id="agreentment">
+                            <label for="agreentment" class="text-white">I agree to all TUTU’s <a href="#"> Terms & Conditions </a></label>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-lg-6 me-auto px-2 margin-3-rem-tb">
+                        <div class="row px-2 align-items-center">
+                            <div class="col-6">
+                                <a href="user-dashboard-setting.html" class="text-decoration-underline"  >Cancel</a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                
+                                <div class="btn-skew">
+                                    <button id="register-btn"> <div class="call-text" style="width:143px;font-size:18px;">Save Changes</div> </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                  
+                    
+                </div>
+            </div>  
+            
+      </div>
+           
+           
+            
+                
+              
+
+            
+         </div>
+      </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

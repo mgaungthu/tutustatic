@@ -1,0 +1,263 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 100%;
+  height: 7px;
+  background: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#66C59F, #66C59F);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: none!important;
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #66C59F;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #66C59F;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #66C59F;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #66C59F;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #66C59F;
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background: #66C59F;
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+
+.guage-holder {
+  width: 320px;
+  position: relative;
+  text-align: center;
+  right: 43px;
+  top: 29px;
+}
+
+.circle-mask {
+  width: 494px;
+  height: 200px;
+  padding: 43px 94px 0;
+  /* border-bottom: 1px solid #ccc; */
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.circled, .circle-inner {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* border: 10px solid #ccc; */
+  position: relative;
+}
+
+/* .circled {
+  /* background-image: linear-gradient(to right, #7C4CED,#7FDDB7); */
+  /* width: 240px; */
+/* }  */
+
+.circle-inner {
+  position: absolute;
+  /* top: 21px;
+  left: 21px; */
+  /* border: 10px solid #7fddb7;
+  border-bottom: 10px solid #7C4CED;
+  border-left: 10px solid #7C4CED; */
+  transition: .3s ease-in-out;
+  transform: rotate(-181deg);
+  width: 300px;
+  height: 300px;
+  background: url("../images/data-calculator/speedometer.png") no-repeat;
+  background-size:cover;
+}
+
+/* .circle-inner:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  border: 7px solid #7c4ced;
+  left: 15px;
+  top: 18px;
+} */
+
+.percentage {
+  margin: 20px 0;
+  font-weight: bold;
+  color: #ed557b;
+  font-size: 15px;
+}
+
+.text-box {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #666;
+}
+
+.gauge-copy {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  background: #ffffff;
+  top: 83%;
+  left: 76%;
+  transition: .3s ease-in-out;
+  transform: translate(-50%, -50%) rotate(0deg);
+  margin: 8px 0 0;
+}
+
+.gauge-copy:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #206AED;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.gauge-copy:before {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+  border-right: 70px solid #ffffff;
+  left: -75px;
+  top: 8px;
+  width: 0;
+  height: 0;
+}
+
+span#gb0 {
+  left: -82px;
+  position: absolute;
+  bottom: 141px;
+  color: #fff;
+}
+
+span#gb0:after {
+  content: " ";
+  transform: rotate(91deg);
+  position: absolute;
+  height: 18px;
+  width: 1px;
+  background:#fff;
+  padding: 1px;
+  left: 70px;
+  top: 6px;
+}
+
+span#gb500 {
+  left: 114px;
+  position: absolute;
+  top: -44px;
+  color:#fff;
+}
+
+span#gb500:after {
+  content: " ";
+  position: relative;
+  height:40px;
+  width:2px;
+  background:#fff;
+  padding: 1px;
+  left: -30px;
+  top: 23px;
+}
+
+span#gblast {
+  position: absolute;
+  right: -98px;
+  bottom: 141px;
+  color: #fff;
+}
+
+span#gblast:after {
+  content: " ";
+  transform: rotate(91deg);
+  position: absolute;
+  height: 18px;
+  width: 1px;
+  background: #fff;
+  padding: 1px;
+  left: -17px;
+  top: 6px;
+}
+
+.data-table tr th {
+  padding: 20px!important;
+  font-size: 22px;
+} 
+
+.data-table tr td {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.data-table tr th, .data-table tr td {
+  text-align: left!important;
+  padding-left: 80px!important;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="cart" unicode="&#xe800;" d="M27 850a27 27 0 1 1 0-54h144l47-118 158-395-63-152a28 28 0 0 1 25-38h676a27 27 0 0 1 0 54h-636l52 125a27 27 0 0 1 0 20l-162 406-54 135a28 28 0 0 1-25 17z m284-162l162-392 608 41 81 351z m176-649a95 95 0 1 1 94-94 95 95 0 0 1-94 94z m378 0a95 95 0 1 1 94-94 95 95 0 0 1-94 94z" horiz-adv-x="1162" />
+
+<glyph glyph-name="call" unicode="&#xe801;" d="M500 850a500 500 0 1 1 500-500 500 500 0 0 1-500 500z m75-742a499 499 0 0 0-281 368c-9 70 113 132 113 132l76-130s-82-44-71-67a419 419 0 0 1 138-175c26-9 83 53 83 53l108-102c1 0-90-116-166-79z" horiz-adv-x="1000" />
+
+<glyph glyph-name="search" unicode="&#xe802;" d="M419 12a419 419 0 1 0 420 419 420 420 0 0 0-420-419m0 740a321 321 0 1 1 321-321 321 321 0 0 1-321 321m494-889h0a46 46 0 0 0-66 0l-211 212a46 46 0 1 0 65 65l212-211a46 46 0 0 0 0-66" horiz-adv-x="926" />
+</font>
+</defs>
+</svg>

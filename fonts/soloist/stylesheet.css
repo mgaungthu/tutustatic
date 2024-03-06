@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Soloist';
+    src: url('Soloist.eot');
+    src: url('Soloist.eot?#iefix') format('embedded-opentype'),
+        url('Soloist.woff2') format('woff2'),
+        url('Soloist.woff') format('woff'),
+        url('Soloist.ttf') format('truetype'),
+        url('Soloist.svg#Soloist') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

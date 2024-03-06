@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@media (min-width: 1901px) {
+
+
+
+}
+
+@media (max-width: 1600px) {
+	.xl-padding-100px-top {
+		padding-top: 100px;
+	}
+
+	.title {
+		font-size:3.2em;
+	}
+
+	.big-font {
+		font-size: 20px; 
+	}
+}
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1300px) {
+   
+}
+
+@media (min-width: 1199px) {
+    
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width:1024px) and (min-width: 778px) {
+    
+}
+
+/* Navigation breakpoint start */
+@media (max-width: 991px) {
+
+}
+/* Navigation breakpoint end */
+
+@media (max-width: 991px) {
+
+		.mainBanner, section.mid-section {
+		height: auto;
+	}
+
+	.search-box {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 991px) and (orientation: landscape) {}
+
+@media only screen and (max-width: 991px) and (min-width: 767px) and (orientation: landscape) {
+    
+}
+
+@media (max-width: 778px) {
+	.banner-title {
+		font-size: 50px;
+	}
+
+	.search-box form .bannerBtn button {
+		font-size: 12.5px;
+	}
+
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+	.map-box {
+		right: -97px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.info-box {
+		display: none;
+	}
+
+	.info-click {
+		display: none;
+	}
+
+	#fiberfuture-content div.tab-pane {
+		background: none!important;
+	}
+
+	.search-box .input-group {
+		margin-top:10px;
+		margin-bottom: 10px;
+	}
+
+	.search-box {
+		display: none;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: 15px;
+	}
+
+	.title {
+		font-size:35px;
+	}
+	.banner-title {
+		font-size: 23px;
+	}
+
+	.banner-img {
+		object-fit: contain;
+	}
+
+	.search-box,.search-box form input, .search-box .search img, .search-box form button {
+		transform: unset;
+	}
+
+	.xs-margin-25-top {
+		margin-top: 25px;
+	}
+
+	.xs-padding-30px-top {
+		padding-top: 30px;
+	}
+
+	.map-box {
+		top: 5px;
+	    right: -60px;
+	    width: 152px;
+	    border-radius: 5px;
+	}
+
+	.search-box form .bannerBtn {
+		width: 100%;
+	}
+
+	#quiz-slider:after {
+		content: unset;
+	}
+
+	.menu-title h4 {
+		color: #000!important;
+	}
+
+	aside.sidenav {
+		display: none;
+	}
+
+	.wrapper {
+		margin-left: 0px;
+		padding-top: 120px;
+	}
+
+	.trans-call-btn,.green-call-btn {
+		width: 150px;
+	}
+
+	.speed-unit {
+		font-size: 28px;
+	}
+
+
+}
+@media (max-height: 460px) {
+    
+}
+
+@media (max-height: 600px) {}

@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Dashboard | Tu Tu Myanmar`s Fastest Wifi</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,,maximum-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+    // DOMContentLoaded  end
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="container-fluid padding-50px-lr">
+            <div class="row">
+                <div class="col-2">
+                    <a href="index.html">
+                    <img src="images/dashboard/tutu-fiber.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-2 ms-auto d-flex align-items-center justify-content-end">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Rohith Machineni
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <aside class="sidenav margin-80px-top">
+            <ul class="left-nav">
+                <li class="nav-item active has-dropdown">
+                    <a href="#">Digital Home</a>
+                    <ul class="dropdown" style="display: none;">
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                            <a href="#" class="role">Admin</a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-billing-history.html">Billing History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-upgrade-plan.html">Upgrade Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-upgrade-pack.html">Upgrade Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Service Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Entertainment Pack</a>
+                </li>
+            </ul>
+            <ul class="left-nav bottom-menu">
+                <li class="nav-item">
+                    <a href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+      </aside>
+
+      <div class="wrapper padding-40px-lr">
+         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="padding-20px-tb border-bottom-lightgreen">
+                        <h3 class="username text-white mb-0">Rohith</h3>
+                        <p class="id-number text-white">8105700909</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 margin-20px-bottom">
+                    <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-8">
+                                    <h3 class="big-font text-white mb-0">Wallet</h3>
+                                 </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div> 
+            <div class="row">   
+                <div class="col-12">
+                    <div class="bg-darkblue padding-20px-lr padding-30px-tb">
+                        <div class="row">
+                            <div class="col-4 col-lg-1">
+                                <img src="images/dashboard/wallet.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-8 col-lg-4">
+                                    <p class="small-font">Wallet Balance</p>
+                                    <p class="speed-unit text-white">280,000 <span>MMK</span></p>
+                                    <a class="green-call-btn margin-10px-top" href="user-dashboard-topup.html">TopUp</a>
+                            </div>
+                            <div class="col-12 col-lg-4 margin-1-rem-top ms-auto d-flex flex-column align-items-center justify-content-center">
+                                <a class="trans-call-btn margin-10px-left margin-10px-bottom" href="#">TopUp History</a>
+                                <p class="text-center">Last recharge on 18/08/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 margin-20px-bottom">
+                    <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-8">
+                                    <h3 class="big-font text-white mb-0">Current Package</h3>
+                                 </div>
+                                 <div class="col-4 ms-auto ">
+                                    <h5 class="status float-end d-flex align-items-center justify-content-end">Active <img src="images/dashboard/status-active.png" width="21px" class="margin-20px-left" alt=""></h5>
+                                 </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-12 margin-10px-bottom padding-10px-tb">
+                    <p class="plantype text-white">Plan Type: <span class="greentext fw-bold">25 mbps</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="border-lightgreen p-3">
+                            <div class="row">
+                                <div class="col-lg-4 margin-10px-bottom">
+                                    <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 padding-20px-lr">
+                                                <img src="images/dashboard/meter.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-8 padding-30px-left">
+                                                <p class="text-white">Plan Speed</p>
+                                                <p class="speed-unit text-white">60  <span>mbps</span></p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 margin-10px-bottom">
+                                    <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 padding-20px-lr">
+                                                <img src="images/dashboard/calendar.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-8 padding-30px-left">
+                                                <p class="text-white">Plan Validity</p>
+                                                <p class="speed-unit redtext">03  <span>days</span></p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 margin-10px-bottom">
+                                    <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 padding-20px-lr">
+                                                <img src="images/dashboard/data.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-8 padding-30px-left">
+                                                <p class="text-white">Usage</p>
+                                                <p class="speed-unit text-white">532  <span>gb</span></p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row padding-10px-tb align-items-center margin-30px-top">
+                <div class="col-6">
+                    <p>Your plan is going to expire on 18/08/2022</p>
+                </div>
+                <div class="col-6 text-end">
+                    <a class="trans-call-btn margin-10px-left margin-10px-bottom" href="#">Change Plan</a>
+                    <a class="green-call-btn margin-10px-left" href="#">Recharge</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 margin-20px-bottom">
+                    <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-8">
+                                    <h3 class="big-font text-white mb-0">Current Upgrade Pack</h3>
+                                 </div>
+                                 <div class="col-4 ms-auto ">
+                                    <h5 class="status float-end d-flex align-items-center justify-content-end">Active <img src="images/dashboard/status-active.png" width="21px" class="margin-20px-left" alt=""></h5>
+                                 </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-12 margin-10px-bottom padding-10px-tb">
+                    <p class="plantype text-white">Upgrade Type: <span class="greentext fw-bold">10 mbps</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="border-lightgreen p-3">
+                            <div class="row">
+                                <div class="col-lg-4 margin-10px-bottom">
+                                    <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 padding-20px-lr">
+                                                <img src="images/dashboard/upgrade-speed.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-8 padding-30px-left">
+                                                <p class="text-white">Upgrade Speed</p>
+                                                <p class="speed-unit text-white">10  <span>mbps</span></p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 margin-10px-bottom">
+                                    <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 padding-20px-lr">
+                                                <img src="images/dashboard/validity.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-8 padding-30px-left">
+                                                <p class="text-white">Pack Validity</p>
+                                                <p class="speed-unit">8  <span>Hours</span></p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 margin-10px-bottom">
+                                    <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 padding-20px-lr">
+                                                <img src="images/dashboard/time-remain.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-8 padding-30px-left">
+                                                <p class="text-white">Remaining Time</p>
+                                                <p class="speed-unit text-white">07:24</p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row padding-10px-tb align-items-center margin-30px-top">
+                
+                <div class="col-6 ms-auto text-end">
+                    <a class="trans-call-btn margin-10px-left margin-10px-bottom" href="#">Buy More</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 margin-20px-bottom">
+                    <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-12">
+                                    <h3 class="big-font text-white mb-0">Test Your Internet Speed</h3>
+                                 </div>
+                                 
+                            </div>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center">
+                    <img src="images/dashboard/speedtest.png" class="img-fluid" alt="">
+
+                    <a class="trans-call-btn margin-10px-left margin-10px-top" href="#">Check Speed</a>
+                </div>
+                <div class="col-lg-6 ms-auto">
+                    <div class="row">
+                        <div class="col-12 ps-3">
+                            <p class="big-font">Result</p>
+                        </div>
+                    </div>
+                    <div class="row margin-20px-top">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="col-2">
+                                    <img src="images/dashboard/down.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-9 me-auto ms-3">
+                                    <p class="text-white">Download</p>
+                                    <p class="speed-unit text-white">532  <span>gb</span></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="col-2">
+                                    <img src="images/dashboard/up.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-9 me-auto ms-3">
+                                    <p class="text-white">Upload</p>
+                                    <p class="speed-unit text-white">532  <span>gb</span></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 margin-20px-bottom">
+                    <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-12">
+                                    <h3 class="big-font text-white mb-0">Service Packs</h3>
+                                 </div>
+                                 
+                            </div>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-lg-4 margin-20px-bottom">
+                    <div class="bg-darkblue p-3">
+                        <div class="padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-6">
+                                    <h3 class="small-title text-white mb-0">Pausing</h3>
+                                 </div>
+                                 <div class="col-4 ms-auto">
+                                    <h5 class="status float-end d-flex align-items-center justify-content-end">Active <img src="images/dashboard/status-active.png" width="21px" class="margin-20px-left" alt=""></h5>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top">
+                            <div class="col-9">
+                                <p class="text-white">Remaining Days</p>
+                                <p class="speed-unit text-white">20  <span>days</span></p>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top">
+                            <div class="col-12 text-end">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 margin-50px-bottom">
+                    <div class="bg-darkblue p-3">
+                        <div class="padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-6">
+                                    <h3 class="small-title text-white mb-0">Moving</h3>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top">
+                            <div class="col-9">
+                               <p>
+                                Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                               </p>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                            <div class="col-12 text-center">
+                                <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 margin-50px-bottom">
+                    <div class="bg-darkblue p-3">
+                        <div class="padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-12">
+                                    <h3 class="small-title text-white mb-0">Fiber Repair</h3>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top">
+                            <div class="col-9">
+                               <p>
+                                Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                               </p>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                            <div class="col-12 text-center">
+                                <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-5-rem-top">
+                <div class="col-12 text-center">
+                    <p>
+                        Above are TUTU’s recommended packages according to your usage behavior. Or you can <a href="#" style="text-decoration: underline;">ALL IN ONE</a> for a call so that our CC team can contact you
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 margin-20px-bottom">
+                    <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-12">
+                                    <h3 class="big-font text-white mb-0">Entertainment Packs</h3>
+                                 </div>
+                                 
+                            </div>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="bg-darkblue p-3">
+                        <div class="padding-10px-tb border-bottom-green">
+                            <div class="row">
+                                 <div class="col-12">
+                                    <h3 class="small-title text-white mb-0">Pausing</h3>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top">
+                            <div class="col-9">
+                               <p>
+                                Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                               </p>
+                            </div>
+                        </div>
+                        <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                            <div class="col-12 text-center">
+                                <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+              
+
+            
+         </div>
+      </div>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

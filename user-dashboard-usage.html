@@ -1,0 +1,747 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Dashboard | Tu Tu Myanmar`s Fastest Wifi</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,,maximum-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+    // DOMContentLoaded  end
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="container-fluid padding-50px-lr">
+            <div class="row">
+                <div class="col-2">
+                    <a href="index.html">
+                    <img src="images/dashboard/tutu-fiber.png"  class="img-fluid" alt="">
+                   
+                    </a>
+                </div>
+                <div class="col-2 ms-auto d-flex align-items-center justify-content-end">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Rohith Machineni
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <aside class="sidenav margin-80px-top">
+            <ul class="left-nav">
+                <li class="nav-item active has-dropdown">
+                    <a href="#">Digital Home</a>
+                    <ul class="dropdown" style="display: none;">
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                            <a href="#" class="role">Admin</a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item user-info d-flex">
+                            <a href="#"> 
+                                <span>Rohith</span>
+                                <span>8105700909</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-billing-history.html">Billing History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-upgrade-plan.html">Upgrade Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="user-dashboard-upgrade-pack.html">Upgrade Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Service Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Entertainment Pack</a>
+                </li>
+            </ul>
+            <ul class="left-nav bottom-menu">
+                <li class="nav-item">
+                    <a href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="text-danger">Logout</a>
+                </li>
+            </ul>
+      </aside>
+
+      <div class="wrapper padding-40px-lr">
+         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="padding-20px-tb border-bottom-lightgreen">
+                        <h3 class="username text-white mb-0">Rohith</h3>
+                        <p class="id-number text-white">8105700909</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav my-3" id="dashboard-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#internet-usage" type="button" role="tab" aria-selected="true">
+                             Internet Usage
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link " data-bs-toggle="pill" data-bs-target="#billing" type="button" role="tab"  aria-selected="false">
+                             Billing
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="pill" data-bs-target="#plans" type="button" role="tab"  aria-selected="false">
+                            Plans
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="pill" data-bs-target="#device" type="button" role="tab" aria-selected="false">
+                              Device
+                            </a>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+            
+              <div class="tab-content" id="dashboard-tabContent">
+                <div class="tab-pane fade show active" id="internet-usage" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="big-font text-white mb-3">Internet Usage</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="border-lightgreen p-3">
+                                <div class="col-11">
+                                    <div class="row">
+                                        <div class="col-lg-4 margin-10px-bottom">
+                                            <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 padding-20px-lr">
+                                                        <img src="images/dashboard/meter.png" class="img-fluid padding-15px-top" alt="">
+                                                    </div>
+                                                    <div class="col-8 padding-30px-left">
+                                                        <p class="text-white">Total Usage</p>
+                                                        <p class="speed-unit greentext">125  <span>GB</span></p>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 margin-10px-bottom">
+                                            <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 padding-20px-lr">
+                                                        <img src="images/dashboard/down.png" class="img-fluid padding-15px-top" alt="">
+                                                    </div>
+                                                    <div class="col-8 padding-30px-left">
+                                                        <p class="text-white">Download</p>
+                                                        <p class="speed-unit">03  <span>days</span></p>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 margin-10px-bottom">
+                                            <div class="bg-darkblue padding-20px-lr padding-20px-tb">
+                                                <div class="row align-items-center">
+                                                    <div class="col-4 padding-20px-lr">
+                                                        <img src="images/dashboard/up.png" class="img-fluid padding-15px-top" alt="">
+                                                    </div>
+                                                    <div class="col-8 padding-30px-left">
+                                                        <p class="text-white">Upload</p>
+                                                        <p class="speed-unit text-white">56.8  <span>gb</span></p>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row padding-15px-lr padding-10px-tb margin-1-rem-top">
+                                    <div class="col-3">
+                                        <p class="big-font">Analysis</p>
+                                        <p>5th AUG to 12th AUG</p>
+                                    </div>
+                                    <div class="col-2 ms-auto text-end">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle text-white chart-dropdown" href="#" id="chart" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Weekly
+                                            </a>
+                                          
+                                            <ul class="dropdown-menu" aria-labelledby="chart">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-12 border-bottom-lightgreen margin-3-rem-top">
+                                        <canvas id="myChart" style="width:100%;height: 350px;"></canvas>
+                                    </div>
+                                </div>
+                                    
+
+                                    
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="billing" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="big-font text-white mb-3">Bill Summary</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="border-lightgreen p-5">
+                                    <div class="row">
+                                       <div class="col-lg-6">
+                                            <h1 class="fw-bold">Bill Summary</h1>
+                                            <h3 class="small-title">June 12th - July 10th 2022</h3>
+                                       </div>
+                                       <div class="col-lg-6 text-end">
+                                                <p class="big-font fw-light">Due date on</p>
+                                                <p class="big-font fw-light text-danger">July 29th 2022</p>
+                                         </div>
+                                    </div>
+
+                                    
+                                    <div class="border-lightgreen p-3 margin-1-rem-top">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7 me-auto">
+                                                <div class="row">
+                                                    <div class="col-6 mb-5">
+                                                        <p class="small-font">Customer Name</p>
+                                                        <p class="item-value">Rohith Machineni</p>
+                                                    </div>
+                                                    <div class="col-6 mb-5">
+                                                        <p class="small-font">Customer ID</p>
+                                                        <p class="item-value">+95 91621675</p>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <p class="small-font">Invoice Date</p>
+                                                        <p class="item-value">20/08/2022</p>
+                                                    </div>
+                                                    <div class="col-6 mb-3">
+                                                        <p class="small-font">Plan</p>
+                                                        <p class="item-value">30 mbps</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                    <div class="pay-now-box">
+                                                        <p class="small-font text-black">Amount</p>
+                                                        <p class="speed-unit text-black">27,900  <span>MMK</span></p>
+                                                        <a href="#" class="green-call-btn">Pay Now</a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row py-3">
+                                        <div class="col-8">
+                                            <a href="#" class="icon-call-btn">
+                                                 Download Bill
+                                            </a>
+                                            <a href="#" class="icon-call-btn print-bill">
+                                                 Print Bill
+                                            </a>
+                                        </div>
+                                        <div class="col-4 d-flex align-items-center justify-content-center">
+                                            <a href="#" class="text-decoration-underline">Billing History</a>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="plans" role="tabpanel">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="big-font text-white mb-3">Current Plan</p>
+                        </div>
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-lg-6 margin-20px-bottom">
+                                    <div class="border-lightgreen p-2">
+                                            <div class="row">
+                                                <div class="col-lg-6 padding-30px-left">
+                                                    <p class="text-white">Internet Speed</p>
+                                                    <p class="speed-unit greentext">30  <span>mbps</span></p>
+                                                </div>
+                                                <div class="col-lg-4 me-auto padding-30px-left">
+                                                    <p class="text-white">Valid</p>
+                                                    <p class="speed-unit text-white">30  <span>Days</span></p>
+                                                </div>
+                                                <div class="col-lg-6 padding-30px-left margin-1-rem-top">
+                                                    <p class="text-white">Per Month</p>
+                                                    <p class="speed-unit text-white">27,900  <span>MMK</span></p>
+                                                </div>
+                                                <div class="col-lg-5 me-auto padding-30px-left margin-1-rem-top">
+                                                    <a class="trans-call-btn margin-1-rem-top w-100" style="background-color: #773CFC;border-color:#773CFC" href="#">Upgrade Plan</a>
+                                                </div>  
+                                            </div>
+        
+                                            
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6 margin-20px-bottom">
+                                    <div class="border-lightgreen padding-20px-bottom padding-10px-top">
+                                            <div class="row">
+                                                <div class="col-lg-8 me-auto padding-30px-left">
+                                                    <p class="text-white">Next Payment</p>
+                                                    <p class="speed-unit">On 23/09/2022</p>
+                                                </div>
+                                                <div class="col-lg-5 me-auto padding-30px-left margin-1-rem-top">
+                                                    <a data-bs-toggle="modal" data-bs-target="#auto-renewal" class="trans-call-btn margin-1-rem-top w-100"
+                                                    style="background-color: #333333;border-color:#333333" href="#">Auto Renewal</a>
+                                                </div>  
+                                                <div class="col-lg-4 ms-auto padding-30px-left margin-3-rem-top">
+                                                    <a href="#" class="text-decoration-underline">Billing History</a>
+                                                </div>
+                                            </div>
+        
+                                            
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 margin-20px-bottom">
+                            <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                                    <div class="row">
+                                         <div class="col-12">
+                                            <h3 class="big-font text-white mb-0">Service Packs</h3>
+                                         </div>
+                                         
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-lg-4 margin-20px-bottom">
+                            <div class="bg-darkblue p-3">
+                                <div class="padding-10px-tb border-bottom-green">
+                                    <div class="row">
+                                         <div class="col-6">
+                                            <h3 class="small-title text-white mb-0">Pausing</h3>
+                                         </div>
+                                         <div class="col-4 ms-auto">
+                                            <!-- <h5 class="status float-end d-flex align-items-center justify-content-end">Active <img src="images/dashboard/status-active.png" width="21px" class="margin-20px-left" alt=""></h5> -->
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top">
+                                    <div class="col-9">
+                                        <p>
+                                            Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                                           </p>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                                    <div class="col-12 text-center">
+                                        <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 margin-50px-bottom">
+                            <div class="bg-darkblue p-3">
+                                <div class="padding-10px-tb border-bottom-green">
+                                    <div class="row">
+                                         <div class="col-6">
+                                            <h3 class="small-title text-white mb-0">Moving</h3>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top">
+                                    <div class="col-9">
+                                       <p>
+                                        Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                                       </p>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                                    <div class="col-12 text-center">
+                                        <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 margin-50px-bottom">
+                            <div class="bg-darkblue p-3">
+                                <div class="padding-10px-tb border-bottom-green">
+                                    <div class="row">
+                                         <div class="col-12">
+                                            <h3 class="small-title text-white mb-0">Fiber Repair</h3>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top">
+                                    <div class="col-9">
+                                       <p>
+                                        Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                                       </p>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                                    <div class="col-12 text-center">
+                                        <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row margin-5-rem-top">
+                        <div class="col-12 text-center">
+                            <p>
+                                Above are TUTU’s recommended packages according to your usage behavior. Or you can <a href="#" style="text-decoration: underline;">ALL IN ONE</a> for a call so that our CC team can contact you
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-12 margin-20px-bottom">
+                            <div class="margin-40px-top padding-10px-tb border-bottom-green">
+                                    <div class="row">
+                                         <div class="col-12">
+                                            <h3 class="big-font text-white mb-0">Entertainment Packs</h3>
+                                         </div>
+                                         
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="bg-darkblue p-3">
+                                <div class="padding-10px-tb border-bottom-green">
+                                    <div class="row">
+                                         <div class="col-12">
+                                            <h3 class="small-title text-white mb-0">Pausing</h3>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top">
+                                    <div class="col-9">
+                                       <p>
+                                        Our Fiber provide the speed of light internet where you will forget how lagging feels like
+                                       </p>
+                                    </div>
+                                </div>
+                                <div class="row margin-20px-top" style="margin-bottom: -52px;">
+                                    <div class="col-12 text-center">
+                                        <a class="call-btn mx-3 mt-4" href="#"><span class="reset-skw">See Package<span></span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+
+            
+         </div>
+      </div>
+
+      <!-- <div id="complete-job-popup" style="display: none;">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center mt-2">
+                <div class="col-8 text-center">
+                    <h1 class="title greentext font-soloist text-blue">ENABLED AUTO PAY SUCCESSFULLY</h1>
+                    <img src="images/career/job-complete.png" class="img-fluid mt-3" style="max-width: 560px;" alt="">
+                    <p class="fw-bold text-black">Thank you for your enrolment in Auto Renewal.<br> You can cancel your Auto Renewal anytime <a href="#" class="text-decoration-underline">here</a></p>
+                    
+                        <a href="career-opportunity.html" class="call-to-login mt-3">Back to home</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+      <div class="modal packages-modal animate__animated animate__fadeIn animate__faster" id="auto-renewal"
+                    tabindex="-1" aria-labelledby="auto-renewal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="modal-title text-black fw-bold">Auto Renewal</h5>
+                                            <p class="text-black">
+                                                Save time and avoid possible late payments! Your balance will be auto paid with the payment method you have provided, starting with your auto renewal on or around July 12, 2022.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="modal-close-btn" data-bs-dismiss="modal" aria-label="close">
+                                    <svg viewBox="0 0 24 24" focusable="false" height="24" width="24" jsname="lZmugf">
+                                        <path d="M0 0h24v24H0z" fill="#none"></path>
+                                        <path id="cross"
+                                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="bg-darkblue p-3">
+                                                <div class="row padding-15px-lr">
+                                                    <div class="col-lg-4 margin-1-rem-top">
+                                                        <div style="border-right: 1px solid #66C59F">
+                                                            <p class="text-white">Monthly Payment</p>
+                                                        <p class="speed-unit greentext">27,900  <span>MMK</span></p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-4 mx-auto margin-1-rem-top">
+                                                        <div  class="padding-35px-left" style="border-right: 1px solid #66C59F">
+                                                            <p class="text-white">Payment Date</p>
+                                                        <p class="speed-unit">July 12, 2022</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-4 margin-1-rem-top">
+                                                        <div class="padding-35px-left">
+                                                            <p class="text-white">Next Auto Renewal Date</p>
+                                                        <p class="speed-unit">Aug 12, 2022</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                <form accept="get" action="succesfully.html">
+                                    <div class="row margin-1-rem-top">
+                                        <div class="col-lg-4">
+                                            <p class="text-black big-font fw-bold">Choose payment method</p>
+                                            <a class="trans-call-btn with-arrow position-relative bg-darkblue margin-10px-top" style="width: 250px;" href="#">Debit or Credit Cards</a>
+                                        </div>  
+                                        
+                                        <div class="col-lg-8">
+                                            <div class="padding-10px-top padding-80px-bottom padding-20px-lr" style="background-color:rgb(88 89 91 / 10%);">
+                                                <div class="row">
+                                                    <div class="col-lg-5 d-flex flex-column mt-3">
+                                                        <label class="text-black fw-bold" for="card-number">Card Number</label>
+                                                        <input type="text" name="card-number" class="box-control mt-3" id="card-number">
+                                                    </div>
+                                                    <div class="col-lg-4 d-flex flex-column mt-3">
+                                                        <label class="text-black fw-bold" for="expiry-year">Expiry Year</label>
+                                                        <input type="text" name="expiry-year" class="box-control mt-3" id="expiry-year">
+                                                    </div>
+                                                    <div class="col-lg-3 d-flex flex-column mt-3">
+                                                        <label class="text-black fw-bold" for="cvv">CVV</label>
+                                                        <input type="text" name="cvv" class="box-control mt-3" id="cvv">
+                                                    </div>
+                                                    <div class="col-lg-6 d-flex flex-column mt-3">
+                                                        <label class="text-black fw-bold" for="name-one-card">Name on Card</label>
+                                                        <input type="text" name="name-one-card" class="box-control mt-3" id="name-one-card">
+                                                    </div>
+                                                    
+                                                   
+                                                    <div class="col-6 mt-5">
+                                                        
+                                                            <button type="submit" class="green-call-btn margin-10px-top">Save</button>
+                                                        
+                                                    </div>
+                                             
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        var xValues = ["Mon", "Tue", "Wed", "Thurs", "Fri","Sat", "Sun"];
+        var yValues = [18.9, 14, 28, 58, 25,35,49];
+        var barColors = ["#fff","#fff","#FFF","#FF8A17","#fff","#fff"];
+        
+        Chart.register(ChartDataLabels);
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              label:'GB',
+              backgroundColor: barColors,
+              data: yValues,
+              borderRadius:8,
+              barThickness:71
+            }],
+           
+
+          },
+          options: {
+        
+             layout: {
+                    padding: 10
+                },
+            scales: {
+                      
+              x:{
+                  grid: {
+                  display: false,
+                  color:"#000",
+                  borderColor: '#fff'
+                },
+                tickColor:"#fff",
+                 ticks: {
+                   font: {
+                            size: 18,
+                            
+                        },
+                   color:"#fff",
+        
+                    },
+                    
+              },
+              y: {
+                display: false,
+              }
+            },
+            plugins: [ChartDataLabels],
+            plugins: {      
+                datalabels: {
+                    formatter: function(value, context) {
+                        // console.log(value);
+                        return value + "\nGB";
+                    },
+                    color:"#000",
+                    textAlign:"center",
+                    align: "end",
+                    anchor: "start",
+                    offset: 25,
+                    padding:-5,
+                    clip: true,
+                    font: {
+                        size: "14",
+                        weight: "bold"
+                    }
+                    },
+                   responsive: true,
+                   legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                              backgroundColor: '#fff',
+                              bodyColor:"yellow",
+                              bodyFont:{weight:'bold',size:18},
+                              title:{display:false},
+                              yAlign:'Bottom',
+                              labelTextColor:"yellow",
+                              color:"#000",
+                              displayColors:false,
+                              padding:18,
+                              callbacks: {
+                                  label: function(context) {
+                                                          let label = context.dataset.label || '';
+                                                          
+                                                          if (label) {
+                                                              label = context.formattedValue +" "+ 'GB';
+                                                          }
+                                                          // if (context.parsed.y !== null) {
+                                                          //     label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                                          // }
+                                                          return label;
+                                                      },
+                                 title: function(context){
+                                    return '';
+                                 },
+                                 
+                              }
+        
+        
+                          }
+                          
+                }
+          }
+        });
+        
+        
+        </script>
+</body>
+
+</html>
